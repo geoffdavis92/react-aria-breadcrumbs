@@ -1,0 +1,9 @@
+{
+  "name": "react-aria-breadcrumbs",
+  "version": "0.0.0",
+  "description": "ARIA-friendly breadcrumb navigation component",
+  "main": "src/index.ts",
+  "author": "Geoff Davis <geoffdavis92@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
