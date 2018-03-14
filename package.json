@@ -1,5 +1,5 @@
 {
-	"name": "react-aria-breadcrumbs",
+	"name": "@geoffdavis/react-aria-breadcrumbs",
 	"version": "0.0.0",
 	"description": "ARIA-friendly breadcrumb navigation component",
 	"main": "src/index.ts",
