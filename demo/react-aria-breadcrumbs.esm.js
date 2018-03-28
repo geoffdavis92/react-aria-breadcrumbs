@@ -30,15 +30,10 @@ const BreadcrumbNav = _a => {
         restProps = __rest(_a, ["children"]);
     return createElement("nav", Object.assign({ className: "react-aria-breadcrumbs", "aria-label": "breadcrumbs", role: "navigation" }, restProps), createElement("ol", null, children));
 };
-const Basecrumb = _a => {
-    var { children, path, title, text, current } = _a,
-        restProps = __rest(_a, ["children", "path", "title", "text", "current"]);
-    return createElement("li", Object.assign({ "aria-current": current ? "page" : null }, restProps), createElement("a", { href: current ? null : path, title: title, "aria-current": current ? "page" : null }, children ? children : text));
-};
 const Breadcrumb = _a => {
     var { children, path, title, text, current } = _a,
         restProps = __rest(_a, ["children", "path", "title", "text", "current"]);
-    return createElement("li", Object.assign({}, restProps), createElement("a", { href: current ? null : path, title: title, "aria-current": current ? "page" : null }, children ? children : text));
+    return createElement("li", Object.assign({}, restProps), createElement("a", { href: current ? "#current" : path, title: current ? `current page` : title, "aria-current": current ? "page" : null }, children ? children : text));
 };
 
-export { Basecrumb, Breadcrumb, BreadcrumbNav };
+export { Breadcrumb, BreadcrumbNav };
