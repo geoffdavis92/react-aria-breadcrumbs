@@ -2,7 +2,6 @@
 	"name": "react-aria-breadcrumbs",
 	"version": "0.0.0",
 	"description": "ARIA-friendly breadcrumb navigation component",
-	"main": "src/index.ts",
 	"author": "Geoff Davis <geoffdavis92@gmail.com>",
 	"license": "MIT",
 	"private": false,
@@ -10,7 +9,7 @@
 	"main": "dist/react-aria-breadcrumbs.cjs.js",
 	"jsnext:main": "dist/react-aria-breadcrumbs.esm.js",
 	"module": "dist/react-aria-breadcrumbs.esm.js",
-	"files": ["dist","LICENSE", "README.md", "src"],
+	"files": ["dist", "LICENSE", "README.md", "src"],
 	"devDependencies": {
 		"@types/react": "^16.0.40",
 		"babel-core": "^6.26.0",
