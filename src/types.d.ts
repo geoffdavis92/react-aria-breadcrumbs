@@ -1,4 +1,4 @@
-import { ReactChildren } from "../node_modules/@types/react/index";
+import { ReactChildren } from "react";
 
 type RestProps = object;
 

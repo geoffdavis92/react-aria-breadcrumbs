@@ -19,27 +19,6 @@ const BreadcrumbNav = ({
 	</nav>
 );
 
-const Basecrumb = ({
-	children,
-	path,
-	title,
-	text,
-	current,
-	...restProps
-}: Crumb) => {
-	return (
-		<li aria-current={current ? "page" : null} {...restProps}>
-			<a
-				href={current ? null : path}
-				title={title}
-				aria-current={current ? "page" : null}
-			>
-				{children ? children : text}
-			</a>
-		</li>
-	);
-};
-
 const Breadcrumb = ({
 	children,
 	path,
@@ -47,18 +26,16 @@ const Breadcrumb = ({
 	text,
 	current,
 	...restProps
-}: Crumb) => {
-	return (
-		<li {...restProps}>
-			<a
-				href={current ? null : path}
-				title={title}
-				aria-current={current ? "page" : null}
-			>
-				{children ? children : text}
-			</a>
-		</li>
-	);
-};
+}: Crumb) => (
+	<li {...restProps}>
+		<a
+			href={current ? "#current" : path}
+			title={current ? `current page` : title}
+			aria-current={current ? "page" : null}
+		>
+			{children ? children : text}
+		</a>
+	</li>
+);
 
-export { Basecrumb, Breadcrumb, BreadcrumbNav };
+export { Breadcrumb, BreadcrumbNav };
